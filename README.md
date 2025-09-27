@@ -68,7 +68,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
  git clone [https://github.com/baurus2/monks_case](https://github.com/baurus2/monks_case)
 
 # 2. Navegue até a pasta do backend
- cd monks/backend
+ cd monks_case/backend
 
 # 3. Crie e ative um ambiente virtual
 # (No Windows)
