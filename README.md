@@ -18,7 +18,7 @@ Projeto full-stack desenvolvido como a solução para o case técnico do process
 * [Como Executar o Projeto](#-como-executar-o-projeto)
 * [Usuários de Teste](#-usuários-de-teste)
 * [Estrutura da API](#-estrutura-da-api)
-* [Autor](#-autor)
+
 
 ---
 
