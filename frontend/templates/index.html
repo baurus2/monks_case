@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Monks - Case Técnico</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="{{ url_for('static', filename='img/logo-monks.svg') }}" alt="Logo MONKS" />
+  </header>
+
+  <main>
+    <div class="card" id="app">
+      <h1>Monks - Dashboard</h1>
+
+      <div id="alerts"></div>
+
+      <section id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label>Email<br /><input type="email" id="email" placeholder="Digite seu email" required /></label><br />
+          <label>Senha<br /><input type="password" id="password" placeholder="Digite sua senha"
+              required /></label><br />
+          <button id="login-btn" type="submit">Entrar</button>
+        </form>
+      </section>
+
+      <section id="dashboard-section" style="display: none">
+        <div class="topbar">
+          <div id="user-info"></div>
+          <div><button id="logout-btn">Sair</button></div>
+        </div>
+
+        <div class="controls">
+          <label>Data inicial: <input type="date" id="start-date" /></label>
+          <label>Data final: <input type="date" id="end-date" /></label>
+          <button id="apply-filter">Aplicar</button>
+        </div>
+
+        <div class="table-wrapper">
+          <div class="spinner-overlay" id="spinner">
+            <div class="spinner"></div>
+          </div>
+          <table id="data-table">
+            <thead id="table-head"></thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+        <div id="pagination"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+  <footer class="footer">
+    Desenvolvido por <strong>Júlio Cesar</strong> —
+    <a href="https://github.com/baurus2" target="_blank">GitHub</a> |
+    <a href="https://br.linkedin.com/in/juliocesar-martins" target="_blank">LinkedIn</a>
+  </footer>
+</body>
+
+</html>
