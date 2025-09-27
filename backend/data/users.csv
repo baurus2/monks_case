@@ -1,0 +1,3 @@
+email,password_hash,role
+admin@monks.com,$2b$12$LBDIdIEieD4mkXwY7TtvpeG/OgyrTSH3RQ0un0N9f/tkLp/xuXZDm,admin
+user@monks.com,$2b$12$.r4KIRp0JwJ9gB5.Pv.uk.20jSWLUv.Jsq3vh96eA059YVkT.bT4e,user
